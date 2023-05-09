@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Demo01.Sender
-build_property.ProjectDir = C:\Dennis\Code\ArchitectureOptions\Demo01\Demo01.Sender\
+build_property.ProjectDir = C:\Dennis\Git\architectureoptions\Demo01\Demo01.Sender\

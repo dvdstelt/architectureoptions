@@ -3132,27 +3132,23 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dennis\\Code\\ArchitectureOptions\\Shared\\Shared.csproj",
+      "projectUniqueName": "C:\\Dennis\\Git\\architectureoptions\\Shared\\Shared.csproj",
       "projectName": "Shared",
-      "projectPath": "C:\\Dennis\\Code\\ArchitectureOptions\\Shared\\Shared.csproj",
+      "projectPath": "C:\\Dennis\\Git\\architectureoptions\\Shared\\Shared.csproj",
       "packagesPath": "C:\\Users\\dvdst\\.nuget\\packages\\",
-      "outputPath": "C:\\Dennis\\Code\\ArchitectureOptions\\Shared\\obj\\",
+      "outputPath": "C:\\Dennis\\Git\\architectureoptions\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dvdst\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\dvdst\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\LocalNuGet": {},
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.myget.org/F/particular/api/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
@@ -3199,7 +3195,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.105\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

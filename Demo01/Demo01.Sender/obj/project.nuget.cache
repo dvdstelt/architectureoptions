@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m5hfFAbPV1CNMFV8npGwWpDI4vRdGv8Cs+ooP0Q2Y2vPM4VNcE6gljhXKMMyPYyQbT1crNskYZzvRWWMp7yGHQ==",
+  "dgSpecHash": "eSEec2IqJmP+vn1jfiMxKCaqqLXdudLClmIWh0r/yCf7mlw4w9M/6F1eZ68kVcJ4JAP6gGJUG1dAHWK3ib7BNA==",
   "success": true,
-  "projectFilePath": "C:\\Dennis\\Code\\ArchitectureOptions\\Demo01\\Demo01.Sender\\Demo01.Sender.csproj",
+  "projectFilePath": "C:\\Dennis\\Git\\architectureoptions\\Demo01\\Demo01.Sender\\Demo01.Sender.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dvdst\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "C:\\Users\\dvdst\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",

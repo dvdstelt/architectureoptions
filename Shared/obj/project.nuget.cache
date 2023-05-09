@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nPu0ezyMlwNy0G526tewE++C+yN22oBZu//iFWZhjr5GWmhIv+kNIzwoxFDtguowdA1LiezQfiZmt+cedDvhDg==",
+  "dgSpecHash": "L2Lrpn6VEBQ4hzL6BnCKXnKf0UWjHatWdkD5LjBAgM6Yc23Gf+PWAzYLLNgRcYsSTZON2257HkVN+DisKbChRQ==",
   "success": true,
-  "projectFilePath": "C:\\Dennis\\Code\\ArchitectureOptions\\Shared\\Shared.csproj",
+  "projectFilePath": "C:\\Dennis\\Git\\architectureoptions\\Shared\\Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dvdst\\.nuget\\packages\\anyconsole\\1.0.72\\anyconsole.1.0.72.nupkg.sha512",
     "C:\\Users\\dvdst\\.nuget\\packages\\colorful.console\\1.2.10\\colorful.console.1.2.10.nupkg.sha512",
