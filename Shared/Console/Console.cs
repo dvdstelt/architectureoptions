@@ -1,54 +1,50 @@
-﻿using System.Drawing;
-using System.Reflection;
-using AnyConsole;
+﻿using System.Reflection;
 
-namespace Shared.Console;
+namespace Shared;
 
-public static class Console
+public static class ConsoleEx
 {
-    static readonly ExtendedConsole console = new ExtendedConsole();
+    private static string title = string.Empty;
+    private static int batchSize = 250;
     
-    public static ExtendedConsole InitializeConsole(string title)
+    public static void Initialize(string title = "", int batchSize = 250)
     {
-        var assembly = Assembly.GetExecutingAssembly();
-        var location = assembly.Location;
-        var demoVersion = location.Substring(assembly.Location.IndexOf("Demo", StringComparison.Ordinal), 6);
+        var assembly = Assembly.GetEntryAssembly();
+        var name = assembly!.FullName!.Split(',')[0];
 
-        var displayTitle = $"{demoVersion} - {title}";
+        ConsoleEx.batchSize = batchSize; 
+        title = $" {name.Split('.')[0]} - {name.Split('.')[1]}";
         System.Console.Title = title;
 
-        console.Configure(config =>
-        {
-            config.SetStaticRow("Header", RowLocation.Top, Color.White, Color.DarkRed);
-            config.SetMaxHistoryLines(1000);
-            config.SetLogHistoryContainer(RowLocation.Top, 1, Color.Silver, Color.Black);
+        var backgroundColor = Console.BackgroundColor;
+        var foregroundColor = Console.ForegroundColor;
+        var windowWith = Console.WindowWidth;
+        
+        Console.BackgroundColor = ConsoleColor.DarkRed;
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine(title.PadRight(windowWith - 1));
+        
+        Console.BackgroundColor = backgroundColor;
+        Console.ForegroundColor = foregroundColor;        
+    }
 
-            config.SetUpdateInterval(TimeSpan.FromMilliseconds(100));
-        });
+    public static void DisplayMenuOptions()
+    {
+        var backgroundColor = Console.BackgroundColor;
+        var foregroundColor = Console.ForegroundColor;
+        var windowWith = Console.WindowWidth;
 
-        console.WriteRow("Header", displayTitle, ColumnLocation.Left, Color.Yellow);
-        console.WriteRow("Header", Component.Time, ColumnLocation.Right);
+        Console.BackgroundColor = ConsoleColor.Gray;
+        Console.ForegroundColor = ConsoleColor.Black;
+        Console.WriteLine("".PadRight(windowWith - 1));
+        Console.WriteLine($"  [1] Send a random customer message".PadRight(windowWith - 1));
+        Console.WriteLine($"  [2] Send {batchSize} random customer messages".PadRight(windowWith - 1));
+        Console.WriteLine($"  [q] To quit".PadRight(windowWith - 1));
+        Console.WriteLine("".PadRight(windowWith - 1));
+        Console.WriteLine();
         
-        console.Write("Mwahahaha");
-        
-        console.Start();
-        
-        return console;
-        // var backgroundColor = Console.BackgroundColor;
-        // var foregroundColor = Console.ForegroundColor;
-        // var windowWith = Console.WindowWidth;
-        //
-        // Console.BackgroundColor = ConsoleColor.DarkRed;
-        // Console.ForegroundColor = ConsoleColor.Yellow;
-        // Console.WriteLine($"{demoVersion} - {title}".PadRight(windowWith - 1));
-        //
-        // Console.BackgroundColor = ConsoleColor.Gray;
-        // Console.ForegroundColor = ConsoleColor.DarkRed;
-        // Console.WriteLine("  [1] Send a random customer message".PadRight(windowWith - 1));
-        // // Console.WriteLine($" [2] Send {BatchSize} random customer messages".PadRight(windowWith - 1));
-        // Console.WriteLine("  [q] To quit".PadRight(windowWith - 1));
-        //
-        // Console.BackgroundColor = backgroundColor;
-        // Console.ForegroundColor = foregroundColor;        
+        Console.BackgroundColor = backgroundColor;
+        Console.ForegroundColor = foregroundColor;        
+
     }
 }

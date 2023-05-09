@@ -1,8 +1,14 @@
 ﻿using Shared;
-using Console = Shared.Console.Console;
+using Shared.Configuration;
 
-const int batchSize = 250;
+ConsoleEx.Initialize();
 
-var console = Console.InitializeConsole("StrategicReceiver");
+var endpointConfiguration = new EndpointConfiguration("StrategicReceiver")
+    .ApplyDefaultConfiguration();
 
-console.WaitForClose();
+var endpointInstance = await Endpoint.Start(endpointConfiguration);
+
+Console.WriteLine("Press a key to quit...");
+Console.ReadKey(true);
+
+await endpointInstance.Stop();
