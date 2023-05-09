@@ -1,0 +1,12 @@
+C:\Dennis\Code\ArchitectureOptions\Shared\bin\Debug\net7.0\Shared.deps.json
+C:\Dennis\Code\ArchitectureOptions\Shared\bin\Debug\net7.0\Shared.dll
+C:\Dennis\Code\ArchitectureOptions\Shared\bin\Debug\net7.0\Shared.pdb
+C:\Dennis\Code\ArchitectureOptions\Shared\obj\Debug\net7.0\Shared.csproj.AssemblyReference.cache
+C:\Dennis\Code\ArchitectureOptions\Shared\obj\Debug\net7.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dennis\Code\ArchitectureOptions\Shared\obj\Debug\net7.0\Shared.AssemblyInfoInputs.cache
+C:\Dennis\Code\ArchitectureOptions\Shared\obj\Debug\net7.0\Shared.AssemblyInfo.cs
+C:\Dennis\Code\ArchitectureOptions\Shared\obj\Debug\net7.0\Shared.csproj.CoreCompileInputs.cache
+C:\Dennis\Code\ArchitectureOptions\Shared\obj\Debug\net7.0\Shared.dll
+C:\Dennis\Code\ArchitectureOptions\Shared\obj\Debug\net7.0\refint\Shared.dll
+C:\Dennis\Code\ArchitectureOptions\Shared\obj\Debug\net7.0\Shared.pdb
+C:\Dennis\Code\ArchitectureOptions\Shared\obj\Debug\net7.0\ref\Shared.dll
