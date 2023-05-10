@@ -41,7 +41,6 @@ static class Program
             {
                 case ConsoleKey.D1:
                     await SendMessage();
-                    Console.WriteLine($"Messages sent");
                     break;
                 case ConsoleKey.D2:
                     await SendBatch();

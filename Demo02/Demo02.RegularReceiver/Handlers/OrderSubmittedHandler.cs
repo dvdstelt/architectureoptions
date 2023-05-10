@@ -1,4 +1,5 @@
-﻿using Shared.Customers;
+﻿using Shared.Configuration;
+using Shared.Customers;
 using Shared.Messages;
 
 public class OrderSubmittedHandler : IHandleMessages<OrderSubmitted>
@@ -10,6 +11,6 @@ public class OrderSubmittedHandler : IHandleMessages<OrderSubmitted>
 
         Console.WriteLine($"Order received for regular CustomerId [{message.CustomerId}]");
 
-        await Task.Delay(50, context.CancellationToken);
+        await Task.Delay(Defaults.RegularDelay, context.CancellationToken);
     }
 }

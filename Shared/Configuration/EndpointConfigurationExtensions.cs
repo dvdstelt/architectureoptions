@@ -1,4 +1,6 @@
-﻿namespace Shared.Configuration;
+﻿using System.Reflection;
+
+namespace Shared.Configuration;
 
 public static class EndpointConfigurationExtensions
 {

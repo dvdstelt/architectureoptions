@@ -19,7 +19,7 @@ public class RegularInterceptor : IProperlyForwardMessages<SubmitOrder>
         if (Customers.GetPriorityCustomers().Contains(order.CustomerId))
             return;
 
-        Console.WriteLine($"Processing regular customer [{order.CustomerId}]");
+        Console.WriteLine($"Sending message to regular receiver [{order.CustomerId}]");
         
         var sendOptions = new SendOptions();
         sendOptions.SetDestination("RegularReceiver");

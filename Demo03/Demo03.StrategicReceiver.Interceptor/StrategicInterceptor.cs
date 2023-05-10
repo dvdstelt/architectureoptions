@@ -18,7 +18,7 @@ public class StrategicInterceptor : IProperlyForwardMessages<SubmitOrder>
         if (!Customers.GetPriorityCustomers().Contains(order.CustomerId))
             return;
 
-        Console.WriteLine($"Processing strategic customer [{order.CustomerId}]");
+        Console.WriteLine($"Sending message to strategic receiver [{order.CustomerId}]");
         
         var sendOptions = new SendOptions();
         sendOptions.SetDestination("StrategicReceiver");
