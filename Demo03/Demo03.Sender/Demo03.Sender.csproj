@@ -13,6 +13,8 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\Shared\Shared.csproj" />
+      <ProjectReference Include="..\Demo03.RegularReceiver.Interceptor\Demo03.RegularReceiver.Interceptor.csproj" />
+      <ProjectReference Include="..\Demo03.StrategicReceiver.Interceptor\Demo03.StrategicReceiver.Interceptor.csproj" />
     </ItemGroup>
 
 </Project>

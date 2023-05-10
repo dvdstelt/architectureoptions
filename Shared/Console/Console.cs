@@ -11,7 +11,7 @@ public static class ConsoleEx
     {
         var assembly = Assembly.GetEntryAssembly();
         var name = assembly!.FullName!.Split(',')[0];
-
+        
         ConsoleEx.batchSize = batchSize; 
         title = $" {name.Split('.')[0]} - {name.Split('.')[1]}";
         System.Console.Title = title;

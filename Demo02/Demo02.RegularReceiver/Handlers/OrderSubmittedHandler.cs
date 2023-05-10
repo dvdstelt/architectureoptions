@@ -3,13 +3,13 @@ using Shared.Messages;
 
 public class OrderSubmittedHandler : IHandleMessages<OrderSubmitted>
 {
-    public Task Handle(OrderSubmitted message, IMessageHandlerContext context)
+    public async Task Handle(OrderSubmitted message, IMessageHandlerContext context)
     {
-        if (!Customers.GetPriorityCustomers().Contains(message.CustomerId))
-        {
-            Console.WriteLine($"Order received for regular CustomerId [{message.CustomerId}]");
-        }
+        if (Customers.GetPriorityCustomers().Contains(message.CustomerId))
+            return;
 
-        return Task.CompletedTask;
+        Console.WriteLine($"Order received for regular CustomerId [{message.CustomerId}]");
+
+        await Task.Delay(50, context.CancellationToken);
     }
 }

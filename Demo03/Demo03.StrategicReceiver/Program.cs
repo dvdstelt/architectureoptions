@@ -1,3 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Shared;
+using Shared.Configuration;
 
-Console.WriteLine("Hello, World!");
+ConsoleEx.Initialize();
+
+var endpointConfiguration = new EndpointConfiguration("StrategicReceiver")
+    .ApplyDefaultConfiguration();
+
+var endpointInstance = await Endpoint.Start(endpointConfiguration);
+
+Console.WriteLine("Press a key to quit...");
+Console.ReadKey(true);
+
+await endpointInstance.Stop();
