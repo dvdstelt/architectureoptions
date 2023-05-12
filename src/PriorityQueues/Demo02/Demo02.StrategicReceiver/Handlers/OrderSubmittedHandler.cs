@@ -8,7 +8,7 @@ public class OrderSubmittedHandler : IHandleMessages<OrderSubmitted>
         if (!Customers.GetPriorityCustomers().Contains(message.CustomerId))
             return Task.CompletedTask;
 
-        Console.WriteLine($"Order received for regular CustomerId [{message.CustomerId}]");
+        Console.WriteLine($"Order received for strategic CustomerId [{message.CustomerId}]");
 
         return Task.CompletedTask;
     }
