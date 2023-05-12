@@ -1,0 +1,8 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Demo03" type="CompoundRunConfigurationType">
+    <toRun name="Demo03.RegularReceiver" type="DotNetProject" />
+    <toRun name="Demo03.Sender" type="DotNetProject" />
+    <toRun name="Demo03.StrategicReceiver" type="DotNetProject" />
+    <method v="2" />
+  </configuration>
+</component>
