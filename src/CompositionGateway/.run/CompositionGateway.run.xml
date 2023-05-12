@@ -1,8 +1,8 @@
 ﻿<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Website.Everything" type="CompoundRunConfigurationType">
+  <configuration default="false" name="CompositionGateway" type="CompoundRunConfigurationType">
+    <toRun name="Divergent.CompositionGateway" type="LaunchSettings" />
     <toRun name="Divergent.Sales.API" type="LaunchSettings" />
     <toRun name="Divergent.Shipping.API" type="LaunchSettings" />
-    <toRun name="Divergent.Website" type="LaunchSettings" />
     <method v="2" />
   </configuration>
 </component>

@@ -1,0 +1,7 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Website" type="CompoundRunConfigurationType">
+    <toRun name="Divergent.Sales.API" type="LaunchSettings" />
+    <toRun name="Divergent.Shipping.API" type="LaunchSettings" />
+    <method v="2" />
+  </configuration>
+</component>
