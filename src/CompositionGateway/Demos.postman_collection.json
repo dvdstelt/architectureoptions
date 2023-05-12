@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "453351ca-a416-43a2-9fbc-c021c4b42595",
+		"name": "Demos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "621890"
+	},
+	"item": [
+		{
+			"name": "Sales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:20295/api/orders/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "20295",
+					"path": [
+						"api",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shipping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:20296/api/shipments/order/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "20296",
+					"path": [
+						"api",
+						"shipments",
+						"order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order Composed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4457/orders/details/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4457",
+					"path": [
+						"orders",
+						"details",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sales Order List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:20295/api/orders?pageSize=10&pageIndex=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "20295",
+					"path": [
+						"api",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "pageSize",
+							"value": "10"
+						},
+						{
+							"key": "pageIndex",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order List Composed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4457/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4457",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
